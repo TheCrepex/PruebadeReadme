@@ -1,133 +1,106 @@
 # Funciones JavaScript
 
-## 1. Alertas y Diálogos
-   - `alert(message)`: Muestra un cuadro de alerta con el mensaje especificado.
-   - `prompt(message, default)`: Muestra un cuadro de diálogo para que el usuario ingrese información con un mensaje y un valor predeterminado opcional.
-   - `confirm(message)`: Muestra un cuadro de confirmación con botones "Aceptar" y "Cancelar" y devuelve un booleano.
+## 1. Manipulación de Elementos HTML
+   - `document.querySelector(selector)`, `document.querySelectorAll(selector)`: Estos métodos son esenciales para seleccionar y manipular elementos HTML.
 
-## 2. Manipulación de Cadenas de Texto
-   - `charAt(index)`: Devuelve el carácter en la posición especificada de una cadena.
-   - `concat(string1, string2, ...)`: Combina dos o más cadenas de texto.
-   - `indexOf(searchValue, startIndex)`: Devuelve la posición de la primera ocurrencia de un valor especificado en una cadena.
+## 2. Eventos y Manejo de Eventos
+   - `addEventListener(event, handler)`: Muy utilizado para gestionar eventos del usuario en la interfaz de usuario.
 
 ## 3. Manipulación de Arrays
-   - `push(element1, element2, ...)`: Agrega uno o más elementos al final de un array.
-   - `pop()`: Elimina el último elemento de un array.
-   - `join(separator)`: Combina todos los elementos de un array en una cadena usando un separador.
-   - `slice(start, end)`: Devuelve una parte de un array.
-   - `splice(start, deleteCount, item1, item2, ...)`: Cambia el contenido de un array eliminando, reemplazando o agregando elementos.
-   - `indexOf(searchElement)`, `lastIndexOf(searchElement)`: Encuentra la primera/última posición de un elemento en un array.
+   - `map(callback)`, `filter(callback)`, `reduce(callback, initialValue)`: Ampliamente utilizado para procesar y transformar datos en arrays.
 
-## 4. Fecha y Tiempo
-   - `Date()`: Crea un objeto de fecha.
-      - `getMonth()`, `getDate()`, `getFullYear()`: Métodos para obtener componentes específicos de una fecha.
+## 4. Comunicación con el Servidor
+   - `XMLHttpRequest`: Importante para realizar peticiones HTTP asíncronas y trabajar con APIs.
 
-## 5. Matemáticas
-   - `Math.random()`: Devuelve un número pseudoaleatorio entre 0 y 1.
-   - `Math.round(number)`: Redondea un número al entero más cercano.
+## 5. Promesas
+   - `Promise(executor)`, `Promise.all(iterable)`: Fundamental para el manejo asíncrono y la gestión de múltiples promesas.
 
-## 6. Control de Flujo
-   - `if`, `else if`, `else`: Estructuras condicionales.
-   - `switch`: Estructura de control de flujo basada en casos.
+## 6. Fecha y Tiempo
+   - `Date()`: Utilizado para trabajar con fechas y horas.
 
-## 7. Bucles
+## 7. Control de Flujo
+   - `if`, `else if`, `else`, `switch`: Estructuras condicionales y de control de flujo.
+
+## 8. Manipulación de Cadenas de Texto
+   - `charAt(index)`, `concat(string1, string2, ...)`, `indexOf(searchValue, startIndex)`: Operaciones comunes en manipulación de cadenas.
+
+## 9. Bucles
    - `for(initialization; condition; iteration)`, `while(condition)`, `do-while(condition)`: Estructuras de bucle para la iteración.
 
-## 8. Conversión de Tipo de Datos
-   - `parseInt(string, radix)`: Convierte una cadena a un número entero.
-   - `parseFloat(string)`: Convierte una cadena a un número de punto flotante.
-   - `String(value)`: Convierte un valor a una cadena de texto.
+## 10. Conversión de Tipo de Datos
+    - `parseInt(string, radix)`, `parseFloat(string)`, `String(value)`: Importante para convertir entre tipos de datos.
 
-## 9. JSON
-   - `JSON.stringify(obj)`, `JSON.parse(jsonString)`: Convierte objetos JavaScript a y desde formato JSON.
+## 11. Ventanas y Navegadores
+    - `window.open(url, name, specs, replace)`, `window.location`: Utilizado para interactuar con la ventana del navegador.
 
-## 10. Funciones de Array Avanzadas
-   - `map(callback)`, `filter(callback)`, `reduce(callback, initialValue)`: Métodos para manipulación avanzada de arrays.
+## 12. Manipulación de Objetos y Prototipos
+    - `Object.create(proto, propertiesObject)`, `Object.assign(target, ...sources)`: Métodos avanzados para trabajar con objetos.
 
-## 11. Funciones
-   - `function name(params)`: Define una función.
-   - `setTimeout(callback, delay)`: Ejecuta una función después de esperar un número especificado de milisegundos.
-   - `setInterval(callback, interval)`: Ejecuta una función a intervalos regulares.
+## 13. Manipulación de Clases y Valores Booleanos
+    - `classList`, `Boolean(value)`: Operaciones comunes en manipulación de clases y valores booleanos.
 
-## 12. Expresiones Regulares
-   - `test(regexp)`, `exec(regexp)`: Métodos para trabajar con expresiones regulares.
-
-## 13. Manejo de Errores
-   - `try { } catch { } finally { }`: Estructuras para manejar excepciones.
-
-## 14. Manipulación Avanzada de Cadenas de Texto
-   - `trim()`: Elimina los espacios en blanco al principio y al final de una cadena.
-   - `toUpperCase()`: Convierte una cadena a mayúsculas.
-   - `toLowerCase()`: Convierte una cadena a minúsculas.
+## 14. JSON
+    - `JSON.stringify(obj)`, `JSON.parse(jsonString)`: Convertir objetos a y desde formato JSON.
 
 ## 15. Operaciones Numéricas
-   - `isNaN(value)`: Determina si un valor no es un número.
-   - `isFinite(value)`: Determina si un valor es un número finito.
-   - `toFixed(digits)`: Formatea un número usando notación de punto fijo.
+    - `Math.random()`, `Math.round(number)`: Operaciones numéricas comunes.
 
-## 16. Manipulación de Objetos y Prototipos
-   - `Object.create(proto, propertiesObject)`, `Object.assign(target, ...sources)`: Métodos para manipulación avanzada de objetos.
+## 16. Manejo de Errores
+    - `try { } catch { } finally { }`: Estructuras para manejar excepciones.
 
-## 17. Fecha y Tiempo Adicional
-   - `Date.now()`: Devuelve el número de milisegundos transcurridos desde el 1 de enero de 1970 00:00:00 UTC.
-   - `Date.UTC(year, month, day, hours, minutes, seconds, milliseconds)`: Devuelve el tiempo en milisegundos entre una fecha y la medianoche del 1 de enero de 1970.
+## 17. Manipulación de Nodos HTML
+    - `createElement(tagName)`, `appendChild(newNode)`, `removeChild(node)`: Operaciones básicas en la manipulación de nodos HTML.
 
-## 18. Manipulación Avanzada de Funciones
-   - `bind(thisArg)`, `call(thisArg, arg1, arg2, ...)`, `apply(thisArg, [argsArray])`: Métodos para manipulación avanzada de funciones.
+## 18. Manipulación Adicional de Caracteres y Cadenas de Texto
+    - `charAt(index)`, `charCodeAt(index)`: Operaciones adicionales en manipulación de caracteres y cadenas de texto.
 
-## 19. Promesas
-   - `Promise(executor)`, `Promise.all(iterable)`: Constructor y método para trabajar con promesas.
+## 19. Expresiones Regulares
+    - `test(regexp)`, `exec(regexp)`: Operaciones comunes en el trabajo con expresiones regulares.
 
-## 20. Manipulación de Nodos HTML
-   - `createElement(tagName)`: Crea un nuevo elemento HTML.
-   - `appendChild(newNode)`, `removeChild(node)`: Métodos para manipulación de nodos HTML.
+## 20. Manipulación Adicional de Objetos y Prototipos
+    - `hasOwnProperty(prop)`, `isPrototypeOf(obj)`, `Object.freeze(obj)`: Operaciones adicionales en manipulación de objetos y prototipos.
 
-## 21. Manipulación Adicional de Caracteres y Cadenas de Texto
-   - `charAt(index)`, `charCodeAt(index)`: Métodos adicionales para manipulación de caracteres y cadenas de texto.
+## 21. Manipulación Adicional de Expresiones Regulares
+    - `search(regexp)`, `match(regexp)`: Operaciones adicionales en manipulación de expresiones regulares.
 
-## 22. Manipulación Adicional de Objetos y Prototipos
-   - `hasOwnProperty(prop)`: Devuelve un booleano indicando si el objeto tiene la propiedad especificada como propiedad propia.
-   - `isPrototypeOf(obj)`, `Object.freeze(obj)`: Métodos adicionales para manipulación de objetos y prototipos.
+## 22. Operaciones Numéricas Adicionales
+    - `isNaN(value)`, `isFinite(value)`, `toFixed(digits)`: Operaciones adicionales en manipulación de números.
 
-## 23. Manipulación Adicional de Expresiones Regulares
-   - `search(regexp)`, `match(regexp)`: Métodos adicionales para manipulación de expresiones regulares.
+## 23. Manipulación Avanzada de Funciones
+    - `bind(thisArg)`, `call(thisArg, arg1, arg2, ...)`, `apply(thisArg, [argsArray])`: Operaciones avanzadas en manipulación de funciones.
 
-## 24. Argumentos de Función y Funciones Adicionales
-   - `arguments`: Objeto similar a un array que contiene los valores de los argumentos pasados a una función.
-   - `Function(args, body)`: Constructor para crear una nueva función.
+## 24. Fecha y Tiempo Adicional
+    - `Date.now()`, `Date.UTC(year, month, day, hours, minutes, seconds, milliseconds)`: Operaciones adicionales en trabajo con fechas y horas.
 
-## 25. Manejo de Eventos
-   - `event.preventDefault()`: Cancela el comportamiento predeterminado del evento si este es cancelable, como enviar un formulario.
-   - `event.stopPropagation()`: Detiene la propagación del evento a través de la jerarquía de eventos.
+## 25. Manipulación Avanzada de Cadenas de Texto
+    - `trim()`, `toUpperCase()`, `toLowerCase()`: Operaciones avanzadas en manipulación de cadenas.
 
-## 26. Manipulación de Cookies
-   - `document.cookie`: Proporciona una interfaz para trabajar con cookies.
+## 26. Funciones Adicionales
+    - `Function(args, body)`: Operaciones adicionales en trabajo con funciones.
 
-## 27. Ventanas y Navegadores
-   - `window.open(url, name, specs, replace)`: Abre una nueva ventana del navegador.
-   - `window.location`: Proporciona información sobre la ubicación del documento actual y permite redirigir a otra página.
+## 27. Manipulación de Cookies
+    - `document.cookie`: Interfaz para trabajar con cookies.
 
-## 28. Manipulación de Clases y Valores Booleanos
-   - `classList`: Proporciona métodos para agregar, eliminar y cambiar clases en un elemento HTML.
-   - `Boolean(value)`: Convierte un valor a su equivalente booleano.
+## 28. Propiedades del Documento HTML
+    - `document.title`: Obtiene o establece el título del documento.
 
-## 29. Propiedades del Documento HTML
-   - `document.title`: Obtiene o establece el título del documento.
+## 29. Navegación del Historial
+    - `history.back()`, `history.forward()`, `history.go()`: Operaciones para navegar por el historial del navegador.
 
-## 30. Comunicación con el Servidor
-   - `XMLHttpRequest`: Objeto para realizar peticiones HTTP asíncronas.
+## 30. Validación de Formularios
+    - `form.checkValidity()`, `input.validity`: Operaciones para validar formularios e inputs.
 
-## 31. Navegación del Historial
-   - `history.back()`, `history.forward()`, `history.go()`: Métodos para navegar por el historial del navegador.
+## 31. Arrastrar y Soltar
+    - Eventos como `dragstart`, `dragenter`, `dragleave`, `dragover`, `drop` para implementar funcionalidad de arrastrar y soltar.
 
-## 32. Validación de Formularios
-   - `form.checkValidity()`, `input.validity`: Métodos y propiedades para validar formularios e inputs.
+## 32. Selección de Elementos HTML Adicional
+    - Métodos adicionales para seleccionar elementos HTML.
 
-## 33. Arrastrar y Soltar
-   - Eventos como `dragstart`, `dragenter`, `dragleave`, `dragover`, `drop` para implementar funcionalidad de arrastrar y soltar.
+## 33. Propiedades de Estilo CSS
+    - `element.style`: Propiedad para acceder y modificar estilos CSS en un elemento HTML.
 
-## 34. Selección de Elementos HTML
-   - `document.querySelector(selector)`, `document.querySelectorAll(selector)`: Métodos para seleccionar elementos HTML.
+## 34. Manipulación de Elementos HTML Adicional
+    - Métodos adicionales para manipular elementos HTML.
 
-## 35. Propiedades de Estilo CSS
-   - `element.style`: Propiedad para acceder y modificar estilos CSS en un elemento HTML.
+## 35. Propiedades de Estilo CSS Adicional
+    - Métodos adicionales para acceder y modificar estilos CSS en un elemento HTML.
